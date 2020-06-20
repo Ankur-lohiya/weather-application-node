@@ -4,7 +4,7 @@ var nam = document.querySelector(".name");
 var desc = document.querySelector(".desc");
 var temp = document.querySelector(".temp");
 var wind = document.querySelector(".wind_speed");
-    var d=new Date(2018, 11, 24, 19, 33, 30, 0).getHours();
+    var d=new Date().getHours();
     if(d>=4 && d<=18){
         $("body").css({
             'background-image':'url("/images/day.jpg")'
