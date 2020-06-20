@@ -8,7 +8,8 @@ router.get('/', function(req, resp, next) {
 });
 
 router.post('/',(req,res)=>{
-  var city=req.body.city;
+    //console.log(req.body);
+    res.redirect('/');
 });
 
 module.exports = router;
