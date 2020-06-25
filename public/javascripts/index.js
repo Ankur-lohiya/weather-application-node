@@ -31,4 +31,15 @@ function loadData() {
             temp.innerHTML = "Description : " + data['weather']['0']['description'];
             wind.innerHTML = "Wind Speed : " + data['wind']['speed'] + "m/s";
         });
+    // fetch("https://covid-19-news.p.rapidapi.com/v1/covid?topic=news&lang=en&country=in&q=covid", {
+    //     "method": "GET",
+    //     "headers": {
+    //         "x-rapidapi-host": "covid-19-news.p.rapidapi.com",
+    //         "x-rapidapi-key": "cf896b5fc3msh83f30858d5860b3p1dff08jsn670351237bec"
+    //     }
+    // })
+    // .then(response => response.json())
+    // .then(data=>{
+    //     console.log(data.articles[0].title);
+    // })
 }

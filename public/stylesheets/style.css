@@ -68,3 +68,26 @@ font-size: 25px;
 font-size: 25px;}
 .wind_speed{
 font-size: 25px;}
+
+#particle-js{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index:-50;
+    top: 0;
+    left: 0;
+}
+
+.city, .submit{
+	display: inline-block;
+}
+
+.city {
+	position: relative;
+  }
+.city span {
+	position: absolute;
+	top: 30px;
+	right: 20px;
+	z-index: 10;
+}

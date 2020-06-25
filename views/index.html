@@ -7,11 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<div id="particle-js"></div>
 <h1 class="title">Weather Report Using OpenWeather API</h1>
 <form class="input" method="POST" action="" id="form">
+	<div class="city">
 	<input type="text" class="city_name" placeholder="Enter a City Name" name="city">
+	<span class="fa fa-microphone"></span>
+	</div>
 	<input type="submit" class="submit" value="Get Weather">
 </form>
 <div class="display">
@@ -22,4 +27,10 @@
 </div>
 </body>
 <script type="text/javascript" src="javascripts/index.js"></script>
+<script type="text/javascript" src="javascripts/particle.js"></script>
+<script>
+	particlesJS.load('particle-js', 'javascripts/particle.json', function() {
+		  console.log('callback - particles.js config loaded');
+	});
+</script>
 </html>
